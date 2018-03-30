@@ -34,7 +34,7 @@ fun main(args: Array<String>) {
 
 
     // Compare numeric values
-    val num11 = 15
+    var num11 = 15
     val num12 = 10
 
     val match:Boolean = (num11 == num12)
@@ -43,10 +43,29 @@ fun main(args: Array<String>) {
 //    val match2:Boolean = num11.equals(num12)
 //    println("Match2 of val is : $match2")
 
-//    comparable
+    //    comparable
     println("Comparasion result (15:10) = ${num11.compareTo(num12)}")
     println("Comparasion result (10:15)= ${num12.compareTo(num11)}")
     println("Comparasion result (15:15)= ${num11.compareTo(num11)}")
 
+
+    // math operation
+    val sum = num11 + num12
+    println("sum =$sum ")
+
+    val sum2 = num11.plus(num12)
+    println("sum2 =$sum2 ")
+
+    val diff = num11- num12
+    println("diff=$diff")
+
+    num11 ++
+    println("num11=$num11")
+
+    val numinc = num11.inc()
+    println("numinc=$numinc")
+
+    println("The value num11 is ${num11++}")
+    println("num11=$num11")
 
 }
