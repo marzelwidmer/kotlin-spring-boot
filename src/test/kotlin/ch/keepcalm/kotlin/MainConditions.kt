@@ -22,4 +22,10 @@ fun main(args: Array<String>) {
         else ->  "Unknown"
     }
     println("The capital is $capital")
+
+    when (state){
+        "CA", "OR", "WA" -> println("West Coast")
+        "NH", "VT", "MA" -> println("New England")
+        else -> println("Somewhere else")
+    }
 }
