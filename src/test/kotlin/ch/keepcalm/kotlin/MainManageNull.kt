@@ -26,6 +26,8 @@ fun main(args: Array<String>) {
 
     // kotlin.KotlinNullPointerException
     try {
+        //  conversion to a non-nullable type.
+        // It will throw NullPointerException if the value is null.
         val l3 = l!!
         println("The value of l3 is $l3")
     }catch (e: KotlinNullPointerException){
