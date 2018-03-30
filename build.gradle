@@ -48,6 +48,7 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-reflect")
     runtime('org.springframework.boot:spring-boot-devtools')
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+//    testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+    compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
     testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
 }
