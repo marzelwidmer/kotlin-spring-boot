@@ -28,4 +28,14 @@ fun main(args: Array<String>) {
         "NH", "VT", "MA" -> println("New England")
         else -> println("Somewhere else")
     }
+
+    val theAnswer = 42
+    when (theAnswer){
+        in 1..39 -> println("Not yet")
+        in 40..45 -> println("Close enough")
+        else -> {
+            println("Definitely not!")
+            println("Not really")
+        }
+    }
 }
