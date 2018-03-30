@@ -1,5 +1,9 @@
 package ch.keepcalm.kotlin
 
+import kotlin.math.PI
+import kotlin.math.abs
+import kotlin.math.round
+
 val name = "Marcel"
 
 fun main(args: Array<String>) {
@@ -68,4 +72,12 @@ fun main(args: Array<String>) {
     println("The value num11 is ${num11++}")
     println("num11=$num11")
 
+
+    // Kotlin math
+    val neg = -152.5
+    val absolute = abs(neg)
+    println("absolute=$absolute")
+    println("rounded=${round(absolute)}")
+
+    println("Have a piece of $PI")
 }
