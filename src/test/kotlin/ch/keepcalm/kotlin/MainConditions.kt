@@ -8,11 +8,18 @@ fun main(args: Array<String>) {
 //    else if (state == "OR") println("The capital is Salem")
 //    else println("I don`t know that sate")
 
-    val capital: String?
-    when (state) {
-        "CA" -> capital = "Sacramento"
-        "OR" -> capital = "Salem"
-        else -> capital = "Unknown"
+//    val capital: String?
+//    when (state) {
+//        "CA" -> capital = "Sacramento"
+//        "OR" -> capital = "Salem"
+//        else -> capital = "Unknown"
+//    }
+
+
+    val capital = when (state) {
+        "CA" -> "Sacramento"
+        "OR" -> "Salem"
+        else ->  "Unknown"
     }
     println("The capital is $capital")
 }
