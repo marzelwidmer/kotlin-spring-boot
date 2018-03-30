@@ -33,4 +33,15 @@ fun main(args:Array<String>){
 
     println("Do they match with ignore uppercase ${aString.equals(string2, true)}")
 
+
+
+
+    // StringBuilder
+    val builder = StringBuilder("To be or not to be \n")
+            .append("that is the question\n")
+            .append("Whatever...")
+
+    val result = builder.toString()
+    println(result)
+
 }
