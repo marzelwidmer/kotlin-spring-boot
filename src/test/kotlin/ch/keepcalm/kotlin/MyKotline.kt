@@ -32,4 +32,21 @@ fun main(args: Array<String>) {
     println("The value of myDouble is $myDouble ")
 
 
+
+    // Compare numeric values
+    val num11 = 15
+    val num12 = 10
+
+    val match:Boolean = (num11 == num12)
+    println("Match of val is : $match")
+//  So from this we learn that using the double equals operator is much more efficient
+//    val match2:Boolean = num11.equals(num12)
+//    println("Match2 of val is : $match2")
+
+//    comparable
+    println("Comparasion result (15:10) = ${num11.compareTo(num12)}")
+    println("Comparasion result (10:15)= ${num12.compareTo(num11)}")
+    println("Comparasion result (15:15)= ${num11.compareTo(num11)}")
+
+
 }
