@@ -29,6 +29,7 @@ fun main(args: Array<String>) {
         else -> println("Somewhere else")
     }
 
+    // In function
     val theAnswer = 42
     when (theAnswer){
         in 1..39 -> println("Not yet")
