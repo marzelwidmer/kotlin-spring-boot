@@ -11,25 +11,25 @@ fun main(args: Array<String>) {
     num1++
     println("The new value of num1 is $num1")
 
-
     val num2:Double = 5.toDouble()
     println("The value of num2 is $num2")
 
-
+    // get type
     val myInt = 42
     val myLong:Long = myInt.toLong()
-
     println("The type of myLong is ${myLong::class.simpleName}")
-    println("The type of myLong is ${myLong::class.simpleName}")
+    println("The type of myLong is ${myLong::class.qualifiedName}")
 
+    //    downcasting
     val myLong2 = 3.64
     var myInt2 = myLong2.toInt()
     println("The value of myLong2 is $myLong2")
     println("The value of myInt2 is $myInt2")
 
+    //    upcasting
     val myInt3 = 568
     val myDouble = myInt3.toDouble()
-    println("The value of myDouble is $myDouble")
+    println("The value of myDouble is $myDouble ")
 
 
 }
