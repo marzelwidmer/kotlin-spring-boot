@@ -14,4 +14,7 @@ fun main(args: Array<String>) {
 
     clothingItem2.price = 10.0
     println("ClothingItme 2 price is included 10% discount : ${clothingItem2.price}")
+
+    val person = Person("Marcel", "Widmer")
+    println("That person is ${person.fullName}")
 }
