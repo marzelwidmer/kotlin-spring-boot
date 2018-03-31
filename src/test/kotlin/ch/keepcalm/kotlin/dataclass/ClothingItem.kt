@@ -1,14 +1,20 @@
 package ch.keepcalm.kotlin.dataclass
 
-data class ClothingItem(var type: String?,
+data class ClothingItem(private var _type: String?,
                         val size: String,
-                        var price: Double) {
+                        private var _price: Double) {
 
-    init {
-        type = type?.toUpperCase() ?: "UNKNOWN"
-    }
+//    init {
+//        _type = _type?.toUpperCase() ?: "UNKNOWN"
+//    }
 
-    constructor(size: String, price: Double) : this(null, size, price) {
-//        type = "Unknown"
-    }
+    var type : String? = _type
+        get() = field ?: "Unknown"
+
+    var price : Double = _price
+        set(value) {
+            field = value * .9 // 10% discount
+        }
+
+    constructor(size: String, price: Double) : this(null, size, price)
 }
