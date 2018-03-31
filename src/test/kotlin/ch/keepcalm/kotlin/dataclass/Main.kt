@@ -7,4 +7,9 @@ fun main(args: Array<String>) {
 
     clothingItem.price = 10.45
     println(clothingItem)
+
+    val clothingItem2 = ClothingItem("M", 2.50)
+    println(clothingItem2)
+
+
 }
