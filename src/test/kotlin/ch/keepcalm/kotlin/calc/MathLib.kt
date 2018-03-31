@@ -1,4 +1,4 @@
-package ch.keepcalm.kotlin
+package ch.keepcalm.kotlin.calc
 
 class MathLib {
     companion object {

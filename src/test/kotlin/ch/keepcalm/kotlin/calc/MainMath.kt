@@ -1,5 +1,5 @@
-package ch.keepcalm.kotlin
-import ch.keepcalm.kotlin.Operation.*
+package ch.keepcalm.kotlin.calc
+import ch.keepcalm.kotlin.calc.Operation.*
 
 fun main(args: Array<String>) {
     try {
@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
         val result: Double? =
                 when(operation){
                     ADD.operator -> MathLib.addValues(number1, number2)
-                    SUBSTRACT.operator -> MathLib.subtractValues(number1,number2)
+                    SUBSTRACT.operator -> MathLib.subtractValues(number1, number2)
                     MULTIPLY.operator -> MathLib.multiplyValues(number1, number2)
                     DIVIDE.operator-> MathLib.divideValues(number1, number2)
                     else -> throw Exception("Unknown operation")
