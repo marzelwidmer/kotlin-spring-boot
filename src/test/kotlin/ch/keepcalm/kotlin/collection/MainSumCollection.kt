@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
         println("Item${item.type} @ ${item.price} = $itemTotal")
         total += itemTotal
     }
-    println("-----------------")
+    println("-------------------------")
     println("Total $total")
 
 
