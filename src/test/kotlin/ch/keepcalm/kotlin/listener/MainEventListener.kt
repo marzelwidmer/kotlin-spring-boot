@@ -1,4 +1,4 @@
-package ch.keepcalm.kotlin.anonymousinterface
+package ch.keepcalm.kotlin.listener
 
 fun main(args: Array<String>) {
     val stateful = StatefulClass(object : ClickListener {
