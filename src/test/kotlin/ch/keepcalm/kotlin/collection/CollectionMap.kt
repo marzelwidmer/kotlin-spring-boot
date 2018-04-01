@@ -20,12 +20,12 @@ fun main(args: Array<String>) {
     stateMap.put("WA", "Olympia")
     println(stateMap)
 
-    // java style
+    // Java style
     for (state in stateMap.keys){
         println("The capital of $state is ${stateMap.get(state)}")
     }
 
-    // kotline style
+    // Kotlin style
     for ((state, capital) in stateMap){
         println("The capital of $state is $capital}")
     }
