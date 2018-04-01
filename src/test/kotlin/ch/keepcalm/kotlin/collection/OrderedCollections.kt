@@ -1,29 +1,39 @@
 package ch.keepcalm.kotlin.collection
 
+import ch.keepcalm.kotlin.dataclass.ClothingItem
+
 fun main(args: Array<String>) {
 
-    val colorList = listOf("Red", "Green", "Blue")
+    val colorSet = mutableSetOf("Red", "Green", "Blue")
+    println(colorSet)
+
+    colorSet.add("Purple")
+    colorSet.remove("Green")
+    println(colorSet)
+
+    val colorList = colorSet.toMutableList()
+    colorList.removeAt(0)
     println(colorList)
 
-    println("Number of colors: ${colorList.size}")
-    println(colorList::class.simpleName)
+    // create duplicate value
+    colorList.add("Purple")
+    println(colorList)
 
-    val colorList2 = mutableListOf<String>()
-    colorList2.add("Red")
-    colorList2.add("Greed")
-    colorList2.add("Blue")
-    println(colorList2)
+    // remove the duplicate value with convert to a mutableSet
+    val newSet = colorList.toMutableSet()
+    println(newSet)
 
-    colorList2.sort()
-    println(colorList2)
+    // kotlin data classes also don`t have duplicate
+    val itemSet = mutableSetOf<ClothingItem>()
+    itemSet.add(ClothingItem("Shirt", "M", 14.99))
+    itemSet.add(ClothingItem("Shirt", "M", 14.99))
+    // only one value will be in de itemSet
+    println("$itemSet with size ${itemSet.size}")
 
-    val sortedDescending = colorList2.sortedDescending()
-    println(sortedDescending)
+    // add a other item now we have 2 items in the Set
+    itemSet.add(ClothingItem("Shirt", "L", 14.99))
+    println("$itemSet with size ${itemSet.size}")
 
-    colorList2.removeAt(0)
-    println(colorList2)
 
-    colorList2.remove("Red")
-    println(colorList2)
 
 }
