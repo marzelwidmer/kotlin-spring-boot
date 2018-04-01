@@ -14,15 +14,30 @@ fun main(args: Array<String>) {
     var myDouble = 1.999
     var myFloat = 1.9F
     var myLong = 123123122L
-    var myInt= 199
+    var myInt = 199
     var myShort: Short = 12
-    var myByte: Byte= 127
+    var myByte: Byte = 127
 
     val aLongNumber = 123_456_789
     val theSameNumber = 123456789
 
     val anInt = 1
-    val aLong: Long= anInt.toLong()
-
+    val aLong: Long = anInt.toLong()
 
 }
+
+// I'm a comment
+
+/*
+    I'm a comment
+ */
+
+
+
+/*
+fun meaningLesFunc(){
+    /*
+        I'm also a comment
+     */
+}
+*/
