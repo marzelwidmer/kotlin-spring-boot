@@ -1,5 +1,3 @@
 package ch.keepcalm.kotlin.tutorial
 
-data class Dog(val breed: String) {
-
-}
+data class Dog(val breed: String)
