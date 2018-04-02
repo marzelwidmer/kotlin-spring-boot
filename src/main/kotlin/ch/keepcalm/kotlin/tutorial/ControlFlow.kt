@@ -2,12 +2,8 @@ package ch.keepcalm.kotlin.tutorial
 
 fun main(args: Array<String>) {
 
-    val myAnswer = 42
-    val aInt: Int
     var myInt = 199
-    val theSameNumber = 123456789
     val anInt = 1
-    val aLong: Long = anInt.toLong()
 
     // Java
     // int lowest = (a < b) ? a : b;
@@ -57,11 +53,35 @@ fun main(args: Array<String>) {
     }
 
     // For
-    for (item in 1..10){
-    //  item++ don't work
+    for (item in 1..10) {
+        //  item++ don't work
         println("Item value is: $item")
     }
-    for (ch in "biscuit"){
+    for (ch in "biscuit") {
         println(ch)
     }
+
+    // advanced loops
+    //So when we run this code, we get the numbers from 10 to 20 by twos printed
+    // print index
+    println()
+    var ndx = 0
+    for (item in 10.rangeTo(20).step(2)) {
+        print("${++ndx}) $item, ")
+    }
+    println()
+
+    // print with index also without own var:
+    for ((index, item) in 10.rangeTo(20).step(2).withIndex()) {
+        print("${index + 1}) $item, ")
+    }
+    println()
+
+    var myArray = arrayListOf(10, 20, 30, 40, 50)
+    // Then we have to say .indices, 'cause array by itself doesn't have an iterator
+    for(item in myArray.indices){
+        println("At index $item is ${myArray[item]} ")
+    }
+    println()
+
 }
