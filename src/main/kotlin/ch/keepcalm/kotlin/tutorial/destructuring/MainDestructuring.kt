@@ -18,4 +18,19 @@ fun main(args: Array<String>) {
     println("xPostision = $xPosition, yPosition = $yPosition")
     println("c1 = ${p1.component1()}")
 
+    showComponents()
+}
+
+fun showComponents(){
+    val myPoint = Point(5000,500,6000)
+    val(myX, myY, myZ) = myPoint
+    println("myX + $myX, myY = $myY, myZ = $myZ")
+
+}
+
+class Point(val x: Int, val y: Int, val z: Int) {
+    operator fun component1(): Int = x
+    operator fun component2(): Int = y
+    operator fun component3(): Int = z
+
 }
