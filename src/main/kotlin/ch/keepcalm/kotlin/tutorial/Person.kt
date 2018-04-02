@@ -1,5 +1,6 @@
 package ch.keepcalm.kotlin.tutorial
 
+@Deprecated("Use the Animal class instead", ReplaceWith("Dog"))
 class Person internal constructor(firstName: String, lastName: String) {
 
     init {
