@@ -1,4 +1,4 @@
-package ch.keepcalm.kotlin.tutorial.vehicle
+package ch.keepcalm.kotlin.tutorial.interfaces
 
 fun main(args: Array<String>) {
 
