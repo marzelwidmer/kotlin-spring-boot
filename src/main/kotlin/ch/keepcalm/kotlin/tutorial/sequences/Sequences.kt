@@ -13,6 +13,11 @@ fun sequences() {
     val squares = generateSequence(1) { it + 1 }.map { it * it }
     val evenSquares = squares.filter { it % 2 == 0 }
     println("Even Squares: " + evenSquares.take(5).toList())
+
+    val fib = generateSequence(1 to 1) {it.second to it.first + it.second}
+            .map {it.first}.drop(1)
+
+    println("Fibonacci : " + fib.take(15).toList())
 }
 
 
